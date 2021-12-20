@@ -24,6 +24,7 @@
 		"prettier": "^2.4.1"
 	},
 	"dependencies": {
-		"core-js": "^3.19.1"
+		"core-js": "^3.19.1",
+		"create-react-app": "^5.0.0"
 	}
 }
