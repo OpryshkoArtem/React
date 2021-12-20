@@ -1,0 +1,10 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode
+
+node_modules/
+
+package-lock.json
+test/ifg.js
+test/index.html
