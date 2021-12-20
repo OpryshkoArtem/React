@@ -6,5 +6,3 @@
 node_modules/
 
 package-lock.json
-test/ifg.js
-test/index.html
