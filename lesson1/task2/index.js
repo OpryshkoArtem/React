@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const rootElement = document.querySelector('#root');
 
 const element = React.createElement(
