@@ -64,7 +64,8 @@
 	  "import/prefer-default-export": 0,
 	  "prefer-template": 0,
 	  "eol-last": "warn"
-	}
+	},
+	"plugins": ["@babel", "react-hooks", "jsx-a11y", "import", "prettier"]  //  добавив по рекомендації https://www.stackfinder.ru/questions/65674476/how-make-eslint-support-for-the-experimental-syntax-jsx-if-it-isnt-currently
  }
 
 
