@@ -30,7 +30,7 @@ class UsersList extends Component {
         </button>
         <ul className="users">
           {usersList.map(user => (
-            <User key={user.name} {...user} />
+            <User key={user.id} {...user} />
           ))}
         </ul>
       </div>
