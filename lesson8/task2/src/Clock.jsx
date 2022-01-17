@@ -18,7 +18,7 @@ class Clock extends React.Component {
 
   componentDidMount() {
     setInterval(() => {
-      this.setState({ offset: getTimeWithOffset(props.offset).toLocaleTimeString() });
+      this.setState({ offset: getTimeWithOffset(this.props.offset).toLocaleTimeString() });
     }, 1000);
   }
 
