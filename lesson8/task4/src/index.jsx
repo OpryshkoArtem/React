@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App.jsx';
+import User from './User.jsx';
 
 const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<User userId="facebook"/>, rootElement);
+
+
+// "https://avatars3.githubusercontent.com/u/69631?v=4"
