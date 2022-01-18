@@ -1,7 +1,12 @@
 import React from 'react';
+import UserForm from './UserForm.jsx';
 
-const App = () => {
-  return <div>Hello, React!</div>;
-};
-
+class App extends React.Component {
+  createUser = obj => {
+    console.log(obj);
+  };
+  render() {
+    return <UserForm onSubmit={this.createUser} />;
+  }
+}
 export default App;
