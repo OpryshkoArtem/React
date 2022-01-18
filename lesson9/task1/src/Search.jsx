@@ -4,7 +4,6 @@ class Search extends Component {
   state = { value: '' };
 
   handleChange = event => {
-    console.log(event.target.value);
     this.setState({ value: event.target.value });
   };
 
