@@ -3,7 +3,7 @@ import ProductsList from './ProductsList.jsx';
 import CartTitle from './CartTitle.jsx';
 
 class ShoppingCart extends Component {
-	state = {
+  state = {
     cartItems: [
       {
         id: '1',
@@ -44,10 +44,10 @@ class ShoppingCart extends Component {
   };
 
   render() {
-		const count = this.state.cartItems.length;
+    const count = this.state.cartItems.length;
     return (
       <div className="column">
-        <CartTitle userName={this.props.userData.firstName} count={count} />
+        <CartTitle userName={this.props.userName} count={count} />
         <ProductsList cartItems={this.state.cartItems} />
       </div>
     );
