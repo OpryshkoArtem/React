@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Expand extends React.Component {
   state = {
@@ -8,7 +9,7 @@ class Expand extends React.Component {
   showContent = () => {
     this.setState({
       isOpen: !this.state.isOpen,
-    })
+    });
   }
 
   render() {
@@ -33,5 +34,9 @@ class Expand extends React.Component {
     );
   }
 }
+
+Expand.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Expand;
