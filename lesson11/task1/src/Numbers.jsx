@@ -1,26 +1,31 @@
-//       {/* <!-- Numbers --> */}
-//       <div class="number">
-//         <span class="number__title">Just 17</span>
-//         <span class="number__value">17</span>
-//       </div>
-//     </div>
-//   );
-// };
-import React from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+class Numbers extends PureComponent {
+  // такий метод уже реалізований у PureComponent
+  // shouldComponentUpdate(nextProps) {
+  // 	if (this.props.number === nextProps.number && this.props.title === nextProps.title) {
+  // 		return false;
+  // 	}
+  // 	return true;
+  // }
 
-class Numbers extends React.Component {
   render() {
     return (
       <div className="number">
-        <span className="number__title">
-					{this.props.title}
-				</span>
-        <span className="number__value">
-				{this.props.number}
-				</span>
+        <span className="number__title">{this.props.title}</span>
+        <span className="number__value">{this.props.number}</span>
       </div>
     );
   }
 }
+
+Numbers.propTypes = {
+  title: PropTypes.string,
+  number: PropTypes.number.isRequired,
+};
+
+Numbers.defaultProps = {
+  title: 'Some number',
+};
 
 export default Numbers;

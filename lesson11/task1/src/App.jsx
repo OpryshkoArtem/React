@@ -16,9 +16,9 @@ class App extends React.Component {
     }, 1000);
   }
 
-	componentWillUnmount() {
-		clearInterval(this.intertvalId);
-	}
+  componentWillUnmount() {
+    clearInterval(this.intertvalId);
+  }
 
   render() {
     return (
