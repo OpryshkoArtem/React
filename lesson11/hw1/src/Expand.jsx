@@ -30,9 +30,7 @@ class Expand extends React.Component {
             {arrowBtn}
           </button>
         </div>
-        <div>
           {content}
-        </div>
       </div>
     );
   }
