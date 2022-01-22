@@ -12,11 +12,15 @@ class Expand extends React.Component {
   }
 
   render() {
-    // const { title, children } = this.props;
-    // const { isOpen } = this.state;
     const arrowBtn = this.state.isOpen
       ? <i className="fas fa-chevron-up" />
       : <i className="fas fa-chevron-down" />
+
+			const content = this.state.isOpen ? (
+				<div className="expand__content">
+					{this.props.children}
+				</div>
+			) : null;
 
     return (
       <div className="expand border">
@@ -26,8 +30,8 @@ class Expand extends React.Component {
             {arrowBtn}
           </button>
         </div>
-        <div className="expand__content">
-          {this.state.isOpen ? this.props.children : null}
+        <div>
+          {content}
         </div>
       </div>
     );
