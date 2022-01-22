@@ -1,29 +1,11 @@
 import React, { Component } from 'react';
-import Expand from './Expand';
+import Expand from './Expand.jsx';
 
 class App extends Component {
-  state = {
-    isOpen: false,
-  };
-
-  hideDialog = () => {
-    this.setState({
-      isOpen: false,
-    });
-  };
-
-  showDialog = () => {
-    this.setState({
-      isOpen: true,
-    });
-  };
 
   render() {
     return (
       <Expand
-        isOpen={this.state.isOpen}
-        onClose={this.hideDialog}
-        onOpen={this.showDialog}
         title="Some title"
       >
         <p>
